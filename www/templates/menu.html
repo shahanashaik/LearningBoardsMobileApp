@@ -1,0 +1,38 @@
+<ion-side-menus enable-menu-with-back-views="false">
+  <ion-side-menu-content>
+    <ion-nav-bar class="bar-calm" align-title = "center">
+      <ion-nav-back-button>
+      </ion-nav-back-button>
+
+      <ion-nav-buttons side="left">
+        <button class="button button-icon button-clear ion-navicon" menu-toggle="left">
+        </button>
+      </ion-nav-buttons>
+      <ion-nav-buttons side="right">
+        <button class="button button-icon button-clear ion-ios-search-strong" ng-click = "goToSearch()">
+        </button>
+      </ion-nav-buttons>
+
+    </ion-nav-bar>
+    <ion-nav-view name="menuContent"></ion-nav-view>
+  </ion-side-menu-content>
+
+  <ion-side-menu side="left">
+    <ion-content class = "my-menu">
+      <ion-list class="ground">
+        <ion-item menu-close href="#/app/home">
+        <i class="icon ion-android-home"></i> Home
+        </ion-item>
+        <ion-item menu-close href="#/app/browse">
+          <i class="icon ion-android-search"></i> Browse
+        </ion-item>
+        <ion-item menu-close href="#/app/whatsNew">
+          <i class="icon ion-android-star"></i> What's New
+        </ion-item>
+        <ion-item menu-close href="">
+          <i class="icon ion-android-exit"></i> Logout
+        </ion-item>
+      </ion-list>
+    </ion-content>
+  </ion-side-menu>
+</ion-side-menus>
