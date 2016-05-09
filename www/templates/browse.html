@@ -1,5 +1,23 @@
 <ion-view view-title="Browse">
   <ion-content>
-    <h1>Browse</h1>
+    <div class="list list-inset">
+		<div class="item">
+      		Boards I'm Following
+    	</div>
+    	<div class="item">
+      		Learning Activities
+    	</div>
+    	<div class="item">
+      		Popular Boards
+    	</div>
+    	<div class="item">
+      		Help
+    	</div>
+    </div>
+    <!-- <h4 class="browse-h4">Select your topic here</h4> -->
+  	<ion-list class="browse-item">
+		<ion-item auto-list-divider auto-list-divider-value="{{item.name}}" ng-repeat="item in items | orderBy : 'name'">
+    {{item.name}}
+	</ion-list>
   </ion-content>
 </ion-view>
