@@ -1,0 +1,99 @@
+.button_addDesign
+{	
+	border: 1px solid white !important;
+}
+
+.detail_header label
+{
+ 	display: block;
+    font-size: 22px;
+    padding: 10px 0 0;
+    text-align: center;
+    width: 100%;
+}
+
+.articleAction
+{
+    display: flex;
+    //padding: 5px;
+    width: 100%;
+}
+.articleNo
+{
+    font-size:25px;
+    font-weight:bold;
+    color:#ff6633;
+}
+.col-articleNo
+{
+    -moz-box-flex: 1;
+    display: block;
+    flex: 1 1 0;
+    width: 100%;
+}
+    .col-boardAction{
+
+    -moz-box-flex: 1;
+    display: block;
+    flex: 1 1 0;
+    padding: 5px;
+    width: 100%;
+
+    }
+.articleShare{
+    display: block;
+    float: right;
+    text-decoration:none;
+}
+.articleCompletion {
+    display: block;
+    float: right;
+}
+
+.learningTitle {
+    display: block;
+    padding: 5px;
+    width: 100%;
+    font-weight:bold;
+}
+.col-postDate
+{
+	 -moz-box-flex: 1;
+    display: block;
+    flex: 1 1 0;
+    width: 100%;
+    }
+
+.col-publisher
+{
+   -moz-box-flex: 1;
+    display: block;
+    flex: 1 1 0;
+    width: 100%;
+  }
+
+  .postDate{
+
+  font-size:12px;
+  }
+
+  .publisher{
+
+  font-size:12px;
+
+  }
+  .learningShare{
+
+  text-decoration: none;
+  }
+  .shareIcon{
+	vertical-align:middle;
+  }
+   .learningComplete{
+
+  text-decoration: none;
+  }
+  .tickIcon{
+	vertical-align:middle;
+  }
+

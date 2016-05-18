@@ -9805,7 +9805,7 @@ a.item-content {
   text-decoration: none; }
 
 .header-item {
-  font-size: 22px !important;
+  font-size: 18px !important;
   font-weight: 700 !important; }
 
 .popular-item {
@@ -9821,7 +9821,9 @@ a.item-content {
   padding-bottom: 10px; }
 
 .board-background {
-  background: #B1B6B7; }
+  background: #B1B6B7;
+  padding-top: 4px;
+  padding-bottom: 4px; }
 
 .board-p {
   color: #444;
@@ -9829,7 +9831,8 @@ a.item-content {
 
 .board-h2 {
   font-weight: bold !important;
-  font-size: 16px; }
+  font-size: 16px !important;
+  font-family: -webkit-body; }
 
 .popular-text {
   font-size: 12px;
@@ -9924,3 +9927,97 @@ ion-modal-view {
     color: #ffffff;
     padding: 1%;
     position: relative; }
+
+ion-item.item-borderless.item {
+  font-size: 14px;
+  font-family: monospace;
+  color: #270202; }
+
+#boardDetail button {
+  background-color: #ff6633;
+  border: medium none;
+  color: #ffffff;
+  padding: 2%;
+  position: relative; }
+
+progress.progressCustom {
+  color: #F11000 !important;
+  background-color: #F11000;
+  width: 50 !important; }
+
+.button_addDesign {
+  border: 1px solid white !important; }
+
+.detail_header label {
+  display: block;
+  font-size: 22px;
+  padding: 10px 0 0;
+  text-align: center;
+  width: 100%; }
+
+.articleAction {
+  display: flex;
+  width: 100%; }
+
+.articleNo {
+  font-size: 25px;
+  font-weight: bold;
+  color: #ff6633; }
+
+.col-articleNo {
+  -moz-box-flex: 1;
+  display: block;
+  flex: 1 1 0;
+  width: 100%; }
+
+.col-boardAction {
+  -moz-box-flex: 1;
+  display: block;
+  flex: 1 1 0;
+  padding: 5px;
+  width: 100%; }
+
+.articleShare {
+  display: block;
+  float: right;
+  text-decoration: none; }
+
+.articleCompletion {
+  display: block;
+  float: right; }
+
+.learningTitle {
+  display: block;
+  padding: 5px;
+  width: 100%;
+  font-weight: bold; }
+
+.col-postDate {
+  -moz-box-flex: 1;
+  display: block;
+  flex: 1 1 0;
+  width: 100%; }
+
+.col-publisher {
+  -moz-box-flex: 1;
+  display: block;
+  flex: 1 1 0;
+  width: 100%; }
+
+.postDate {
+  font-size: 12px; }
+
+.publisher {
+  font-size: 12px; }
+
+.learningShare {
+  text-decoration: none; }
+
+.shareIcon {
+  vertical-align: middle; }
+
+.learningComplete {
+  text-decoration: none; }
+
+.tickIcon {
+  vertical-align: middle; }

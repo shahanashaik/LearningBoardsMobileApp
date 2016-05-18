@@ -69,6 +69,16 @@ angular.module('starter', ['ionic', 'starter.controllers', 'autoListDivider'])
           controller: 'BoardDetailCtrl'
         }
       }
+    })
+
+  .state('app.browseDetail', {
+      url: '/browseDetail',
+      views: {
+        'menuContent': {
+          templateUrl: 'templates/browseDetail.html',
+          controller: 'BrowseDetailCtrl'
+        }
+      }
     });
   // if none of the above states are matched, use this as the fallback
   $urlRouterProvider.otherwise('/app/home');

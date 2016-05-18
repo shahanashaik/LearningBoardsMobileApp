@@ -78,6 +78,41 @@ $scope.goToSearch = function () {
 })
 
 .controller('BrowseCtrl', function($scope, $state) {
+  $scope.goToDetail =  function() {
+    $state.go('app.browseDetail');
+  };
+})
+
+.controller('SearchCtrl', function($scope, $state) {
+  $scope.goBack =  function() {
+    $state.go('app.home');
+  };
+})
+
+.controller('BoardDetailCtrl', function($scope, $state) {
+  $scope.goBack =  function() {
+    $state.go('app.home');
+  };
+})
+
+.controller('xmlController', function($scope, $http) 
+{ 
+    $http.get("//demo.ado.ai.accenture.com/melia/OldTes/books.xml", 
+    { 
+        transformResponse: function(cnv) 
+        { 
+            var x2js = new X2JS(); 
+            var aftCnv = x2js.xml_str2json(cnv); 
+            return aftCnv; 
+        } 
+    }).success(function(response) 
+    { 
+      $scope.bookstore = response;
+        console.log(response); 
+    }); 
+})
+
+.controller('BrowseDetailCtrl', function($scope, $state){
   $scope.items = [
                     {
                       id: "1", name:"Accenture Requirements Analyzer(ARA)"
@@ -116,19 +151,9 @@ $scope.goToSearch = function () {
                       id: "12",name:"Media and Entertainment"
                     }
                 ];
+  
   $scope.dividerFunction = function(key){
   return key;
-}
-})
+  }
+});
 
-.controller('SearchCtrl', function($scope, $state) {
-  $scope.goBack =  function() {
-    $state.go('app.home');
-  };
-})
-
-.controller('BoardDetailCtrl', function($scope, $state) {
-  $scope.goBack =  function() {
-    $state.go('app.home');
-  };
-})

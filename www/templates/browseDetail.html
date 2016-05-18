@@ -1,0 +1,8 @@
+<ion-view view-title="Topic">
+<ion-content>
+<ion-list class="browse-item">
+		<ion-item auto-list-divider auto-list-divider-value="{{item.name}}" ng-repeat="item in items | orderBy : 'name'">
+    {{item.name}}
+	</ion-list>
+</ion-content>
+</ion-view>
