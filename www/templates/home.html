@@ -1,139 +1,135 @@
 <ion-view view-title="Learning Boards">
   <ion-content class = "padding has-header">
-    <div class="list card">
-      <div class="item board-background" ng-click = "goToBoardDetail('app.learningBoardDetail')">
-        <h2 class="board-h2">Learning Boards and A3</h2>
+    <!--<div id = "slidingBox">
+      <ion-slide-box auto-play='true' does-continue='true' slide-intervel='50000'>
+                                                <ion-slide class="item-thumbnail-left">
+                                                <img src="img/learn.png" alt="learn"></img>
+                                                <h4>Learn</h4>
+ 
+                                                <p>Browse or search based on the topic area you want to learn more about. Access beautifully curated internal and external content from a learning board.</p>
+                                                </ion-slide>
+                                                <ion-slide class="item-thumbnail-left">
+                                                <img src="img/follow.png" alt="follow"></img>
+                                                <h4>Follow</h4>
+                                                <p>Ensure you are getting the latest updates by following learning boards that interest you. follow a curator to expand your library of learning boards.</p>
+                                                </ion-slide>
+                                                <ion-slide class="item-thumbnail-left">
+                                                <img src="img/collaborate.png" alt="collaborate"></img>
+                                                <h4>Collaborate</h4>
+                                                <p>Leave comment to provide feedback to the community. Endorese a learning board to improve its usefulness rating amongst the community.</p>
+                                                </ion-slide>
+      </ion-slide-box>
     </div>
-    <div class="item item-body row">
-      <div class="col box col-50">
-        <img class="board-image box" src="img/popular1.png">
-      </div>
-      <div class="col list box">
-        <div class="item item-body row">
-          <div class="col box col-20">
-            <img src="img/icon_recommend.gif">
-          </div>
-          <div class="col popular-text" href="#">
-            2,051 
-          </div>
-        </div>
-        <div class="item item-body row">
-          <div class="col box col-20">
-            <img src="img/icon_completed.png">
-          </div>
-          <div class="col popular-text" href="#">
-             34,996 
-          </div>
-        </div>
-        <div class="item item-body row">
-          <div class="col box col-20">
-            <img src="img/icon_follow.png">
-          </div>
-          <div class="col popular-text" href="#">
-             3,875 
-          </div>
-        </div>
-        <div class="item item-body row">
-          <div class="col box col-20">
-            <i class="icon ion-star"></i>
-          </div>
-          <div class="col popular-text" href="#">
-             Intermediate 
-          </div>
-        </div>
-      <!-- <br item-text-wrap><p>This board will help you to understand how your learning boards interactions increases your A3 score</p> -->
-      </div>
+    <div>
+        <h3 class="">Popular Boards</h3>
     </div>
-  </div>
-  <div class="list card">
-      <div class="item board-background" ng-click = "goToBoardDetail('app.learningBoardDetail')">
-        <h2 class="board-h2">Meaningful Connections</h2>
-    </div>
-    <div class="item item-body row">
-      <div class="col col-50">
-        <img class="board-image box" src="img/popular2.png">
+--> 
+ <div class="popularBoard card">
+    <div class="board_Title" ng-click = "goToBoardDetail('app.learningBoardDetail')">
+        <h2>Learning Boards and A3</h2>
+        
       </div>
-      <div class="col list box">
-        <div class="item item-body row">
-          <div class="col box col-20">
-            <img src="img/icon_recommend.gif">
-          </div>
-          <div class="col popular-text" href="#">
-            1,356 
-          </div>
-        </div>
-        <div class="item item-body row">
-          <div class="col box col-20">
-            <img src="img/icon_completed.png">
-          </div>
-          <div class="col popular-text" href="#">
-             48,412 
-          </div>
-        </div>
-        <div class="item item-body row">
-          <div class="col box col-20">
-            <img src="img/icon_follow.png">
-          </div>
-          <div class="col popular-text" href="#">
-             3,611 
-          </div>
-        </div>
-        <div class="item item-body row">
-          <div class="col box col-20">
-            <i class="icon ion-star"></i>
-          </div>
-          <div class="col popular-text" href="#">
-             Beginner 
-          </div>
-        </div>
-      <!-- <br item-text-wrap><p>Connection means different things to different people. At Accenture, the most powerful connections happen through timely, honest and open...</p> -->
-      </div>
+    <div class="imageDiv">
+        <img src="img/popular1.png"></img>
     </div>
-  </div>
-  <div class="list card">
-      <div class="item board-background item-text-wrap" ng-click = "goToBoardDetail('app.learningBoardDetail')">
-        <h2 class="board-h2">Performance Achievement: Know Yourself LearningBoard</h2>
+    <div class="buttonDiv">
+      <p><strong>Level :</strong> Intermediate</p>
+      <p><img src="img/icon_recommend.gif"><span>1,989</span></p>
+      <p><img src="img/icon_completed.png"><span>31,474</span></p>
+      <p><img src="img/icon_follow.png"><span>3,755</span></p>
+    
     </div>
-    <div class="item item-body row">
-      <div class="col box col-50">
-        <img class="board-image" src="img/popular3.png">
+ </div>
+  <div class="popularBoard card">
+    <div class="board_Title" ng-click = "goToBoardDetail('app.learningBoardDetail')">
+        <h2>Meaningful Connections</h2>
+        
       </div>
-      <div class="col list box">
-        <div class="item item-body row">
-          <div class="col box col-20">
-            <img src="img/icon_recommend.gif">
-          </div>
-          <div class="col popular-text" href="#">
-            716 
-          </div>
-        </div>
-        <div class="item item-body row">
-          <div class="col box col-20">
-            <img src="img/icon_completed.png">
-          </div>
-          <div class="col popular-text" href="#">
-             26,894 
-          </div>
-        </div>
-        <div class="item item-body row">
-          <div class="col box col-20">
-            <img src="img/icon_follow.png">
-          </div>
-          <div class="col popular-text" href="#">
-             3,004 
-          </div>
-        </div>
-        <div class="item item-body row">
-          <div class="col box col-20">
-            <i class="icon ion-star"></i>
-          </div>
-          <div class="col popular-text" href="#">
-             Intermediate 
-          </div>
-        </div>
-      <!-- <br item-text-wrap><p>To unlock your potential to drive personal, team and business performance, it's important to know yourself first. The Know Yourself learning board will help...</p> -->
-      </div>
+    <div class="imageDiv">
+        <img src="img/popular2.png"></img>
     </div>
-  </div>
+    <div class="buttonDiv">
+      <p><strong>Level :</strong> Intermediate</p>
+      <p><img src="img/icon_recommend.gif"><span>1,989</span></p>
+      <p><img src="img/icon_completed.png"><span>31,474</span></p>
+      <p><img src="img/icon_follow.png"><span>3,755</span></p>
+    </div>
+ </div>
+  <div class="popularBoard card">
+    <div class="board_Title" ng-click = "goToBoardDetail('app.learningBoardDetail')">
+        <h2>Performance Achievement: Know Yourself LearningBoard</h2>
+       
+      </div>
+    <div class="imageDiv">
+        <img src="img/popular3.png"></img>
+    </div>
+    <div class="buttonDiv">
+      <p><strong>Level :</strong> Intermediate</p>
+      <p><img src="img/icon_recommend.gif"><span>1,989</span></p>
+      <p><img src="img/icon_completed.png"><span>31,474</span></p>
+      <p><img src="img/icon_follow.png"><span>3,755</span></p>  
+    </div>
+ </div>
+ <div class="popularBoard card">
+    <div class="board_Title">
+        <h2>Learning Boards and A3</h2>
+      </div>
+    <div class="imageDiv">
+        <img src="img/popular1.png"></img>
+    </div>
+    <div class="buttonDiv">
+      <p><strong>Level :</strong> Intermediate</p>
+      <p><img src="img/icon_recommend.gif"><span>1,989</span></p>
+      <p><img src="img/icon_completed.png"><span>31,474</span></p>
+      <p><img src="img/icon_follow.png"><span>3,755</span></p>
+    </div>
+ </div>
+ <div class="popularBoard card">
+    <div class="board_Title" ng-click = "goToBoardDetail('app.learningBoardDetail')">
+        <h2>Meaningful Connections</h2>
+        
+      </div>
+    <div class="imageDiv">
+        <img src="img/popular2.png"></img>
+    </div>
+    <div class="buttonDiv">
+      <p><strong>Level :</strong> Intermediate</p>
+      <p><img src="img/icon_recommend.gif"><span>1,989</span></p>
+      <p><img src="img/icon_completed.png"><span>31,474</span></p>
+      <p><img src="img/icon_follow.png"><span>3,755</span></p>
+    </div>
+ </div>
+  <div class="popularBoard card">
+    <div class="board_Title" ng-click = "goToBoardDetail('app.learningBoardDetail')">
+        <h2>Performance Achievement: Know Yourself LearningBoard</h2>
+        
+      </div>
+    <div class="imageDiv">
+        <img src="img/popular3.png"></img>
+    </div>
+    <div class="buttonDiv">
+      <p><strong>Level :</strong> Intermediate</p>
+      <p><img src="img/icon_recommend.gif"><span>1,989</span></p>
+      <p><img src="img/icon_completed.png"><span>31,474</span></p>
+      <p><img src="img/icon_follow.png"><span>3,755</span></p>
+    </div>
+ </div>
+  <div class="popularBoard card">
+    <div class="board_Title" ng-click = "goToBoardDetail('app.learningBoardDetail')">
+        <h2>Learning Boards and A3</h2>
+       
+      </div>
+    <div class="imageDiv">
+        <img src="img/popular1.png"></img>
+    </div>
+    <div class="buttonDiv">
+      <p><strong>Level :</strong> Intermediate</p>
+      <p><img src="img/icon_recommend.gif"><span>1,989</span></p>
+      <p><img src="img/icon_completed.png"><span>31,474</span></p>
+      <p><img src="img/icon_follow.png"><span>3,755</span></p> 
+    </div>
+ </div>
+   
   </ion-content>
 </ion-view>
+

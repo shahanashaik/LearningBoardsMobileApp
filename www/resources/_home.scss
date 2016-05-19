@@ -165,3 +165,81 @@ progress.progressCustom{
    background-color:#F11000;
     width: 50 !important;
 }
+
+/**********home.html styles************/
+
+ion-view[view-title="Learning Boards"] .scroll {
+    margin:auto;
+    text-align:center;
+        
+    h3 {
+  border-bottom: 1px solid;
+  color: #3F8392;
+  padding: 1%; }
+
+.popularBoard.card > div {
+  padding: 1% 2%; }
+
+.popularBoard.card > div:first-child {
+  background-color: #e1e1e1; }
+
+.imageDiv, .buttonDiv {
+  display: inline-block;
+  vertical-align: middle; 
+  }
+
+.buttonDiv button {
+  display: ruby-text-container;
+  margin-left: 10%;
+  display: none; }
+
+.popularBoard div:first-child h2 {
+  color: #ff6633;
+  font-size: 1em; 
+  margin:4px 0px;}
+
+.imageDiv,.imageDiv img {
+  width: 100%;
+  padding:0 !important;
+   }
+
+
+.buttonDiv {
+  width: 100%;
+  text-align:center; }
+  .buttonDiv p {
+    color: #1F1C31;;
+    font-size:0.7em;
+    margin:0 4px; }
+
+  .buttonDiv .ion-android-checkbox:before, .buttonDiv .ion-ios-people:before, .buttonDiv .ion-android-star:before {
+    padding-right: 5px; }
+
+.popularBoard.card {
+    display: inline-block;
+    width: 48%;
+    margin: 0.5%;
+    vertical-align: top;
+    text-align: left;
+}
+.popularBoard.card p{
+  width:25%;
+  display:inline-block;
+}
+.popularBoard.card p span{
+  display: block;
+  color: #1F1C31;
+}
+.popularBoard.card p:first-child{
+  width:100%;
+  display:block;
+  text-align: left;
+  margin-bottom: 4px !important;
+  font-size:0.8em;
+}
+.buttonDiv p strong {
+    color: #FF6633;
+}
+
+}
+
