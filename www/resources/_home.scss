@@ -1,30 +1,28 @@
 .home{
-	font-size: 15px !important;
-	font-weight: bold !important;
+  font-size: 15px !important;
+  font-weight: bold !important;
 }
-ion-side-menu .item-content{
-	background: #AAAAAA !important;
-}
+
 a.item-content {
     display: block;
     color: white !important;
     text-decoration: none;
 }
 .header-item{
-	font-size: 18px !important;
-	font-weight: 700 !important;
+  font-size: 18px !important;
+  font-weight: 700 !important;
 }
 .popular-item{
-	font-size: 28px !important;
-	font-weight: 500 !important;
-	color: #4E4A4A;
-	line-height: 1.0;
-	padding-top: 10px;
+  font-size: 28px !important;
+  font-weight: 500 !important;
+  color: #4E4A4A;
+  line-height: 1.0;
+  padding-top: 10px;
 }
 .board-image{
-	width: 100%;
-	padding-top: 10px;
-	padding-bottom: 10px;
+  width: 100%;
+  padding-top: 10px;
+  padding-bottom: 10px;
 }
 .board-background {
     background: #B1B6B7;
@@ -32,8 +30,8 @@ a.item-content {
     padding-bottom: 4px;
 }
 .board-p{
-	color: #444;
-	font-weight: bold;
+  color: #444;
+  font-weight: bold;
 }
 .board-h2 {
     font-weight: bold !important;
@@ -41,8 +39,8 @@ a.item-content {
     font-family: -webkit-body;
 }
 .popular-text{
-	font-size: 12px;
-	color: #100D0D;
+  font-size: 12px;
+  color: #100D0D;
     padding-top: 4px;
 }
 .item-icon-left .icon {
@@ -54,7 +52,7 @@ a.item-content {
     bottom: 1px;
 }
 .whatsNew-header{
-	font-size: 20px;
+  font-size: 20px;
     color: #355182;
     font-family: sans-serif;
     font-weight: bold;
@@ -100,7 +98,7 @@ ion-slide {
     color: #ef473a;
     font-weight: bold;
                 }
-		 h3 {
+     h3 {
     color: #A0460E;
     font-weight: bold;
     font-size: 16px;
@@ -166,7 +164,13 @@ progress.progressCustom{
     width: 50 !important;
 }
 
-/**********home.html styles************/
+/**********Home Boards Styles************/
+
+ion-nav-view[name="menuContent"] ion-content{ 
+    background-image: url('../img/pageBack.jpg');
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+}
 
 ion-view[view-title="Learning Boards"] .scroll {
     margin:auto;
@@ -180,14 +184,15 @@ ion-view[view-title="Learning Boards"] .scroll {
 .popularBoard.card > div {
   padding: 1% 2%; }
 
-.popularBoard.card > div:first-child {
-  background-color: #e1e1e1; }
-
 .imageDiv, .buttonDiv {
   display: inline-block;
-  vertical-align: middle; 
+  vertical-align: middle;
+  width:49%; 
   }
-
+.imageDiv img{
+  width:100%;
+  border-radius: 8px;
+}
 .buttonDiv button {
   display: ruby-text-container;
   margin-left: 10%;
@@ -198,14 +203,7 @@ ion-view[view-title="Learning Boards"] .scroll {
   font-size: 1em; 
   margin:4px 0px;}
 
-.imageDiv,.imageDiv img {
-  width: 100%;
-  padding:0 !important;
-   }
-
-
 .buttonDiv {
-  width: 100%;
   text-align:center; }
   .buttonDiv p {
     color: #1F1C31;;
@@ -216,11 +214,13 @@ ion-view[view-title="Learning Boards"] .scroll {
     padding-right: 5px; }
 
 .popularBoard.card {
-    display: inline-block;
-    width: 48%;
-    margin: 0.5%;
+    display: block;
     vertical-align: top;
     text-align: left;
+    background-image: url('../img/tileBack1.jpg');
+    background-size: 100% 100%;
+    margin: 2% 3% !important;
+    width: 94%;
 }
 .popularBoard.card p{
   width:25%;
@@ -242,4 +242,15 @@ ion-view[view-title="Learning Boards"] .scroll {
 }
 
 }
+
+/*******Menu Styles*********/
+ion-side-menu ion-content {
+    background-image: url('../img/pageBack.jpg');
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+}
+ion-side-menu ion-content ion-item, ion-side-menu ion-content ion-item a {
+    background-color: rgba(0,0,0,0) !important;
+}
+
 
