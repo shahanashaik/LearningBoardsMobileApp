@@ -97,7 +97,7 @@ $scope.goToSearch = function () {
 
 .controller('xmlController', function($scope, $http) 
 { 
-    $http.get("//demo.ado.ai.accenture.com/melia/OldTes/books.xml", 
+    $http.get("//lbdemo.accenture.com/boards.xml", 
     { 
         transformResponse: function(cnv) 
         { 
@@ -107,8 +107,10 @@ $scope.goToSearch = function () {
         } 
     }).success(function(response) 
     { 
-      $scope.bookstore = response;
-        console.log(response); 
+      $scope.XMLData = response;
+      $scope.itemsArray = $scope.XMLData.rss.channel.item;
+        console.log(response);
+        //console.log($scope.itemsArray);
     }); 
 })
 
