@@ -157,6 +157,24 @@ $scope.goToSearch = function () {
   $scope.dividerFunction = function(key){
   return key;
   }
+  $scope.addListIds = function(){
+    $scope.allocateId = function(){jQuery('.item-divider').each(function(){jQuery(this).attr('id',jQuery(this).html());});}
+    if(jQuery('.item-divider').length == 0){
+      setTimeout($scope.allocateId,1000);}
+
+    jQuery('ion-content').scroll(function() {
+      $scope.position = jQuery(this).scrollTop();
+      jQuery('.item-divider').each(function() {
+        $scope.target = jQuery(this).offset().top;
+        $scope.id = jQuery(this).attr('id');
+        $scope.li_text = jQuery(this).html();
+        if ($scope.position >= $scope.target) {
+         jQuery('#alphaInput input').attr('value',$scope.li_text);  
+        }
+      });
+    });
+    }
+  $scope.addListIds();
   $scope.alphaSortingFunction = function(){
     //console.log('clicked');
     
@@ -165,7 +183,7 @@ $scope.goToSearch = function () {
       var li_text = jQuery(this).html();
       //console.log(li_text);
       jQuery('#alphaInput input').attr('value',li_text);
-      jQuery('.item-divider').each(function(){jQuery(this).attr('id',jQuery(this).html());});
+      //jQuery('.item-divider').each(function(){jQuery(this).attr('id',jQuery(this).html());});
       //console.log(li_text);
       $('ion-view[view-title="Browse"] ion-content').scrollTop($("#"+li_text).offset().top);
       
