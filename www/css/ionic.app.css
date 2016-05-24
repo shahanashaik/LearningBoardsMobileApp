@@ -9796,9 +9796,6 @@ a.button {
   font-size: 15px !important;
   font-weight: bold !important; }
 
-ion-side-menu .item-content {
-  background: #AAAAAA !important; }
-
 a.item-content {
   display: block;
   color: white !important;
@@ -9944,6 +9941,77 @@ progress.progressCustom {
   color: #F11000 !important;
   background-color: #F11000;
   width: 50 !important; }
+
+/**********Home Boards Styles************/
+ion-nav-view[name="menuContent"] ion-content {
+  background-image: url("../img/pageBack.jpg");
+  background-size: 100% 100%;
+  background-repeat: no-repeat; }
+
+ion-view[view-title="Learning Boards"] .scroll {
+  margin: auto;
+  text-align: center; }
+  ion-view[view-title="Learning Boards"] .scroll h3 {
+    border-bottom: 1px solid;
+    color: #3F8392;
+    padding: 1%; }
+  ion-view[view-title="Learning Boards"] .scroll .popularBoard.card > div {
+    padding: 1% 2%; }
+  ion-view[view-title="Learning Boards"] .scroll .imageDiv, ion-view[view-title="Learning Boards"] .scroll .buttonDiv {
+    display: inline-block;
+    vertical-align: middle;
+    width: 49%; }
+  ion-view[view-title="Learning Boards"] .scroll .imageDiv img {
+    width: 100%;
+    border-radius: 8px; }
+  ion-view[view-title="Learning Boards"] .scroll .buttonDiv button {
+    display: ruby-text-container;
+    margin-left: 10%;
+    display: none; }
+  ion-view[view-title="Learning Boards"] .scroll .popularBoard div:first-child h2 {
+    color: #795548;
+    font-size: 1em;
+    font-weight: 600;
+    margin: 4px 0px; }
+  ion-view[view-title="Learning Boards"] .scroll .buttonDiv {
+    text-align: center; }
+  ion-view[view-title="Learning Boards"] .scroll .buttonDiv p {
+    color: #1F1C31;
+    font-size: 0.7em;
+    margin: 0 4px; }
+  ion-view[view-title="Learning Boards"] .scroll .buttonDiv .ion-android-checkbox:before, ion-view[view-title="Learning Boards"] .scroll .buttonDiv .ion-ios-people:before, ion-view[view-title="Learning Boards"] .scroll .buttonDiv .ion-android-star:before {
+    padding-right: 5px; }
+  ion-view[view-title="Learning Boards"] .scroll .popularBoard.card {
+    display: block;
+    vertical-align: top;
+    text-align: left;
+    background-image: url("../img/background.png");
+    background-size: 100% 100%;
+    margin: 2% 3% !important;
+    width: 94%; }
+  ion-view[view-title="Learning Boards"] .scroll .popularBoard.card p {
+    width: 25%;
+    display: inline-block; }
+  ion-view[view-title="Learning Boards"] .scroll .popularBoard.card p span {
+    display: block;
+    color: #1F1C31; }
+  ion-view[view-title="Learning Boards"] .scroll .popularBoard.card p:first-child {
+    width: 100%;
+    display: block;
+    text-align: left;
+    margin-bottom: 4px !important;
+    font-size: 0.8em; }
+  ion-view[view-title="Learning Boards"] .scroll .buttonDiv p strong {
+    color: #FF6633; }
+
+/*******Menu Styles*********/
+ion-side-menu ion-content {
+  background-image: url("../img/pageBack.jpg");
+  background-size: 100% 100%;
+  background-repeat: no-repeat; }
+
+ion-side-menu ion-content ion-item, ion-side-menu ion-content ion-item a {
+  background-color: transparent !important; }
 
 .button_addDesign {
   border: 1px solid white !important; }

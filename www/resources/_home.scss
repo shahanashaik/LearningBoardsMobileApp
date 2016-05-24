@@ -199,9 +199,10 @@ ion-view[view-title="Learning Boards"] .scroll {
   display: none; }
 
 .popularBoard div:first-child h2 {
-  color: #ff6633;
-  font-size: 1em; 
-  margin:4px 0px;}
+  color: #795548;
+    font-size: 1em;
+    font-weight: 600;
+    margin: 4px 0px;}
 
 .buttonDiv {
   text-align:center; }
@@ -217,7 +218,7 @@ ion-view[view-title="Learning Boards"] .scroll {
     display: block;
     vertical-align: top;
     text-align: left;
-    background-image: url('../img/tileBack1.jpg');
+    background-image: url('../img/background.png');
     background-size: 100% 100%;
     margin: 2% 3% !important;
     width: 94%;
