@@ -253,4 +253,40 @@ ion-side-menu ion-content ion-item, ion-side-menu ion-content ion-item a {
     background-color: rgba(0,0,0,0) !important;
 }
 
+/*************browseDetail.html****************/
+div#alphaSort {
+    position: fixed;
+    z-index: 10;
+    right: 0;
+    width: 40px;
+    height: 38px;
+}
+#alphaInput input[type="text"] {
+    padding: 2%;
+    text-align: center;
+    width: 100%;
+    color: #0C0C0C;
+    background-color: rgba(37, 27, 27, 0.33);
+    height: 38px;
+}
+#alphaInput .ion-arrow-down-c {
+    position: absolute;
+    right: 4px;
+    top: 10px;
+}
 
+#alphaBox {
+    position: fixed;
+    left: 0;
+    z-index: 11;
+    background-color: rgba(0, 0, 0, 0.8);
+    color: #fff;
+    width: 100%;
+    top: inherit;
+    display: none;
+}
+
+#alphaBox li {
+    display: inline-block;
+    padding: 2%;
+}

@@ -1,113 +1,44 @@
 <ion-view view-title="Browse">
+<div id="alphaSort" ng-click="alphaSortingFunction()" class="has-header">
+    <div id="alphaInput">
+      <input type="text" value="A" disabled></input>
+      <i class="icon ion-arrow-down-c"></i>
+    </div>
+    <div id="alphaBox" class="has-header">
+      <ul>
+        <li>A</li>
+    <li>B</li>
+    <li>C</li>
+    <li>D</li>
+    <li>E</li>
+    <li>F</li>
+    <li>G</li>
+    <li>H</li>
+    <li>I</li>
+    <li>J</li>
+    <li>K</li>
+    <li>L</li>
+    <li>M</li>
+    <li>N</li>
+    <li>O</li>
+    <li>P</li>
+    <li>Q</li>
+    <li>R</li>
+    <li>S</li>
+    <li>T</li>
+    <li>U</li>
+    <li>V</li>
+    <li>W</li>
+    <li>X</li>
+    <li>Y</li>
+    <li>Z</li>
+      </ul>
+    </div>
+  </div>
   <ion-content>
-    <ion-list>
-        <ion-item class="item-borderless">
-        <i class="icon ion-ios-circle-filled"></i>  Boards I'm Following
-        </ion-item>
-        <ion-item class="item-borderless">
-          <i class="icon ion-ios-circle-filled"></i>  Learning Activities
-        </ion-item>
-        <ion-item class="item-borderless">
-          <i class="icon ion-ios-circle-filled"></i>  Popular Boards
-        </ion-item>
-        <ion-item class="item-borderless">
-          <i class="icon ion-ios-circle-filled"></i>  Help
-        </ion-item>
-      </ion-list>
-<h3>Browse your topic here</h3>
-      <div class="row">
-        <div class="col">
-          <a href="" ng-click="goToDetail()">A</a>
-        </div>
-        <div class="col">
-          <a href="">B</a>
-        </div>
-        <div class="col">
-          <a href="">C</a>
-        </div>
-        <div class="col">
-          <a href="">D</a>
-        </div>
-        <div class="col">
-          <a href="">E</a>
-        </div>
-       </div>
-       <div class="row">
-        <div class="col">
-          <a href="">F</a>
-        </div>
-        <div class="col">
-          <a href="">G</a>
-        </div>
-        <div class="col">
-          <a href="">H</a>
-        </div>
-        <div class="col">
-          <a href="">I</a>
-        </div>
-        <div class="col">
-          <a href="">J</a>
-        </div>
-       </div>
-       <div class="row">
-        <div class="col">
-          <a href="">K</a>
-        </div>
-        <div class="col">
-          <a href="">L</a>
-        </div>
-        <div class="col">
-          <a href="">M</a>
-        </div>
-        <div class="col">
-          <a href="">N</a>
-        </div>
-        <div class="col">
-          <a href="">O</a>
-        </div>
-       </div>
-       <div class="row">
-        <div class="col">
-          <a href="">P</a>
-        </div>
-        <div class="col">
-          <a href="">Q</a>
-        </div>
-        <div class="col">
-          <a href="">R</a>
-        </div>
-        <div class="col">
-          <a href="">S</a>
-        </div>
-        <div class="col">
-          <a href="">T</a>
-        </div>
-       </div>
-       <div class="row">
-        <div class="col">
-          <a href="">U</a>
-        </div>
-        <div class="col">
-          <a href="">V</a>
-        </div>
-        <div class="col">
-          <a href="">W</a>
-        </div>
-        <div class="col">
-          <a href="">X</a>
-        </div>
-        <div class="col">
-          <a href="">Y</a>
-        </div>
-       </div>
-       <div class="row">
-        <div class="col">
-          <a href="">Z</a>
-        </div>
-       </div>
-  	<!-- <ion-list class="browse-item">
-		<ion-item auto-list-divider auto-list-divider-value="{{item.name}}" ng-repeat="item in items | orderBy : 'name'">
+  <ion-list class="browse-item">
+    <ion-item auto-list-divider auto-list-divider-value="{{item.name}}" ng-repeat="item in items | orderBy : 'name'">
     {{item.name}}
-	</ion-list> -->
+  </ion-list>
   </ion-content>
 </ion-view>

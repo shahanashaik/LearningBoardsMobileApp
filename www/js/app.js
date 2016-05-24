@@ -47,7 +47,8 @@ angular.module('starter', ['ionic', 'starter.controllers', 'autoListDivider'])
       views: {
         'menuContent': {
           templateUrl: 'templates/browse.html',
-          controller: 'BrowseCtrl'
+          //controller: 'BrowseCtrl'
+          controller: 'BrowseDetailCtrl'
         }
       }
     })

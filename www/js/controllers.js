@@ -157,5 +157,22 @@ $scope.goToSearch = function () {
   $scope.dividerFunction = function(key){
   return key;
   }
+  $scope.alphaSortingFunction = function(){
+    //console.log('clicked');
+    
+    jQuery('#alphaBox').toggle();
+    jQuery('#alphaBox ul li').click(function(e){
+      var li_text = jQuery(this).html();
+      //console.log(li_text);
+      jQuery('#alphaInput input').attr('value',li_text);
+      jQuery('.item-divider').each(function(){jQuery(this).attr('id',jQuery(this).html());});
+      //console.log(li_text);
+      $('ion-view[view-title="Browse"] ion-content').scrollTop($("#"+li_text).offset().top);
+      
+
+    });
+
+  }
+
 });
 
