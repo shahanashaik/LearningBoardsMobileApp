@@ -9968,7 +9968,7 @@ ion-view[view-title="Learning Boards"] .scroll {
     margin-left: 10%;
     display: none; }
   ion-view[view-title="Learning Boards"] .scroll .popularBoard div:first-child h2 {
-    color: #795548;
+    color: #525150;
     font-size: 1em;
     font-weight: 600;
     margin: 4px 0px; }
@@ -9984,7 +9984,6 @@ ion-view[view-title="Learning Boards"] .scroll {
     display: block;
     vertical-align: top;
     text-align: left;
-    background-image: url("../img/background.png");
     background-size: 100% 100%;
     margin: 2% 3% !important;
     width: 94%; }
@@ -10001,7 +10000,7 @@ ion-view[view-title="Learning Boards"] .scroll {
     margin-bottom: 4px !important;
     font-size: 0.8em; }
   ion-view[view-title="Learning Boards"] .scroll .buttonDiv p strong {
-    color: #FF6633; }
+    color: #7D7D7D; }
 
 /*******Menu Styles*********/
 ion-side-menu ion-content {
@@ -10144,16 +10143,86 @@ h5.icon-left {
   text-align: left;
   margin-top: 0px; }
 
-.button-bargroup {
+.button-bargroupAct {
   border-color: transparent;
-  background-color: #FF9800;
+  background: url("../img/icon_learnings_new.png") no-repeat center;
+  background-color: #FFFFFF;
   color: #FFF4F4;
   position: relative;
   display: inline-block;
   margin: 0;
   padding: 0 12px;
   min-width: 30px;
-  min-height: 10px;
+  min-height: 25px;
+  border-width: 1px;
+  border-style: solid;
+  border-radius: 4px;
+  vertical-align: top;
+  text-align: center;
+  text-overflow: ellipsis;
+  font-size: 14px;
+  line-height: 25px;
+  cursor: pointer;
+  align-items: center;
+  font-weight: 700; }
+
+.button-bargroupEnd {
+  border-color: transparent;
+  background: url("../img/icon_recommend_new.png") no-repeat center;
+  background-color: #FFFFFF;
+  color: #FFF4F4;
+  position: relative;
+  display: inline-block;
+  margin: 0;
+  padding: 0 12px;
+  min-width: 30px;
+  min-height: 25px;
+  border-width: 1px;
+  border-style: solid;
+  border-radius: 4px;
+  vertical-align: top;
+  text-align: center;
+  text-overflow: ellipsis;
+  font-size: 14px;
+  line-height: 25px;
+  cursor: pointer;
+  align-items: center;
+  font-weight: 700; }
+
+.button-bargroupCom {
+  border-color: transparent;
+  background: url("../img/icon_completed_new.png") no-repeat center;
+  background-color: #FFFFFF;
+  color: #FFF4F4;
+  position: relative;
+  display: inline-block;
+  margin: 0;
+  padding: 0 12px;
+  min-width: 30px;
+  min-height: 25px;
+  border-width: 1px;
+  border-style: solid;
+  border-radius: 4px;
+  vertical-align: top;
+  text-align: center;
+  text-overflow: ellipsis;
+  font-size: 14px;
+  line-height: 25px;
+  cursor: pointer;
+  align-items: center;
+  font-weight: 700; }
+
+.button-bargroupFoll {
+  border-color: transparent;
+  background: url("../img/icon_follow_new.png") no-repeat center;
+  background-color: #FFFFFF;
+  color: #FFF4F4;
+  position: relative;
+  display: inline-block;
+  margin: 0;
+  padding: 0 12px;
+  min-width: 30px;
+  min-height: 25px;
   border-width: 1px;
   border-style: solid;
   border-radius: 4px;

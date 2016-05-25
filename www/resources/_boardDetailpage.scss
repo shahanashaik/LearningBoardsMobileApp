@@ -102,16 +102,17 @@ h5.icon-left {
     text-align: left;
     margin-top: 0px;
 }
-.button-bargroup{
-  border-color: transparent;
-    background-color: #FF9800;
+.button-bargroupAct{
+    border-color: transparent;
+    background: url('../img/icon_learnings_new.png') no-repeat center;
+    background-color: #FFFFFF;
     color: #FFF4F4;
     position: relative;
     display: inline-block;
     margin: 0;
     padding: 0 12px;
     min-width: 30px;
-    min-height: 10px;
+    min-height: 25px;
     border-width: 1px;
     border-style: solid;
     border-radius: 4px;
@@ -123,7 +124,76 @@ h5.icon-left {
     cursor: pointer;
     align-items: center;
     font-weight: 700;
-  }
+}
+.button-bargroupEnd{
+    border-color: transparent;
+    background: url('../img/icon_recommend_new.png') no-repeat center;
+    background-color: #FFFFFF;
+    color: #FFF4F4;
+    position: relative;
+    display: inline-block;
+    margin: 0;
+    padding: 0 12px;
+    min-width: 30px;
+    min-height: 25px;
+    border-width: 1px;
+    border-style: solid;
+    border-radius: 4px;
+    vertical-align: top;
+    text-align: center;
+    text-overflow: ellipsis;
+    font-size: 14px;
+    line-height: 25px;
+    cursor: pointer;
+    align-items: center;
+    font-weight: 700;
+}
+.button-bargroupCom{
+    border-color: transparent;
+    background: url('../img/icon_completed_new.png') no-repeat center;
+    background-color: #FFFFFF;
+    color: #FFF4F4;
+    position: relative;
+    display: inline-block;
+    margin: 0;
+    padding: 0 12px;
+    min-width: 30px;
+    min-height: 25px;
+    border-width: 1px;
+    border-style: solid;
+    border-radius: 4px;
+    vertical-align: top;
+    text-align: center;
+    text-overflow: ellipsis;
+    font-size: 14px;
+    line-height: 25px;
+    cursor: pointer;
+    align-items: center;
+    font-weight: 700;
+}
+.button-bargroupFoll{
+    border-color: transparent;
+    background: url('../img/icon_follow_new.png') no-repeat center;
+    background-color: #FFFFFF;
+    color: #FFF4F4;
+    position: relative;
+    display: inline-block;
+    margin: 0;
+    padding: 0 12px;
+    min-width: 30px;
+    min-height: 25px;
+    border-width: 1px;
+    border-style: solid;
+    border-radius: 4px;
+    vertical-align: top;
+    text-align: center;
+    text-overflow: ellipsis;
+    font-size: 14px;
+    line-height: 25px;
+    cursor: pointer;
+    align-items: center;
+    font-weight: 700;
+}
   .col-50-style {
     -webkit-box-flex: 0;
     -webkit-flex: 0 0 50%;

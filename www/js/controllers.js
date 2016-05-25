@@ -93,6 +93,9 @@ $scope.goToSearch = function () {
   $scope.goBack =  function() {
     $state.go('app.home');
   };
+  $scope.start = function(){
+    $scope.buttonStyle="button-calm";
+  }
 })
 
 .controller('xmlController', function($scope, $http) 
