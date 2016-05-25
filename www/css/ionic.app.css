@@ -9944,7 +9944,6 @@ progress.progressCustom {
 
 /**********Home Boards Styles************/
 ion-nav-view[name="menuContent"] ion-content {
-  background-image: url("../img/pageBack.jpg");
   background-size: 100% 100%;
   background-repeat: no-repeat; }
 
@@ -10013,22 +10012,71 @@ ion-side-menu ion-content {
 ion-side-menu ion-content ion-item, ion-side-menu ion-content ion-item a {
   background-color: transparent !important; }
 
+/*************browseDetail.html****************/
+div#alphaSort {
+  position: fixed;
+  z-index: 10;
+  right: 0;
+  width: 40px;
+  height: 38px; }
+
+#alphaInput input[type="text"] {
+  padding: 2%;
+  text-align: center;
+  width: 100%;
+  color: #0C0C0C;
+  background-color: rgba(37, 27, 27, 0.33);
+  height: 38px; }
+
+#alphaInput .ion-arrow-down-c {
+  position: absolute;
+  right: 4px;
+  top: 10px; }
+
+/*#alphaBox {
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 11;
+    background-color: rgba(0,0,0,0.8);
+    color: #fff;
+    width:100%;
+    top:34px;
+    display: none;
+}*/
+#alphaBox {
+  position: fixed;
+  left: 0;
+  z-index: 11;
+  background-color: rgba(0, 0, 0, 0.8);
+  color: #fff;
+  width: 100%;
+  top: inherit;
+  display: none; }
+
+#alphaBox li {
+  display: inline-block;
+  padding: 2%; }
+
 .button_addDesign {
   border: 1px solid white !important; }
 
 .detail_header label {
   display: block;
-  font-size: 22px;
+  font-size: 18px;
   padding: 10px 0 0;
-  text-align: center;
-  width: 100%; }
+  text-align: left;
+  width: 100%;
+  padding-left: 10px;
+  color: #FF4E45;
+  font-weight: 700; }
 
 .articleAction {
   display: flex;
   width: 100%; }
 
 .articleNo {
-  font-size: 25px;
+  font-size: 20px;
   font-weight: bold;
   color: #ff6633; }
 
@@ -10058,7 +10106,8 @@ ion-side-menu ion-content ion-item, ion-side-menu ion-content ion-item a {
   display: block;
   padding: 5px;
   width: 100%;
-  font-weight: bold; }
+  font-weight: bold;
+  text-align: left; }
 
 .col-postDate {
   -moz-box-flex: 1;
@@ -10066,16 +10115,15 @@ ion-side-menu ion-content ion-item, ion-side-menu ion-content ion-item a {
   flex: 1 1 0;
   width: 100%; }
 
-.col-publisher {
-  -moz-box-flex: 1;
-  display: block;
-  flex: 1 1 0;
-  width: 100%; }
+.col.publisher {
+  font-size: 14px;
+  text-align: left;
+  color: #11C1F3;
+  font-weight: 700;
+  text-align: left; }
 
 .postDate {
-  font-size: 12px; }
-
-.publisher {
+  text-align: left;
   font-size: 12px; }
 
 .learningShare {
@@ -10089,3 +10137,51 @@ ion-side-menu ion-content ion-item, ion-side-menu ion-content ion-item a {
 
 .tickIcon {
   vertical-align: middle; }
+
+h5.icon-left {
+  font-size: 14px;
+  color: #03A9F4;
+  text-align: left;
+  margin-top: 0px; }
+
+.button-bargroup {
+  border-color: transparent;
+  background-color: #FF9800;
+  color: #FFF4F4;
+  position: relative;
+  display: inline-block;
+  margin: 0;
+  padding: 0 12px;
+  min-width: 30px;
+  min-height: 10px;
+  border-width: 1px;
+  border-style: solid;
+  border-radius: 4px;
+  vertical-align: top;
+  text-align: center;
+  text-overflow: ellipsis;
+  font-size: 14px;
+  line-height: 25px;
+  cursor: pointer;
+  align-items: center;
+  font-weight: 700; }
+
+.col-50-style {
+  -webkit-box-flex: 0;
+  -webkit-flex: 0 0 50%;
+  -moz-box-flex: 0;
+  -moz-flex: 0 0 50%;
+  -ms-flex: 0 0 50%;
+  flex: 0 0 50%;
+  max-width: 50%;
+  height: 20px; }
+
+.learningDescription {
+  font-size: 14px; }
+
+.mainCard {
+  margin-top: 0px; }
+
+.item.row.boardDetail {
+  padding-top: 0px;
+  padding-bottom: 0px; }

@@ -6,10 +6,13 @@
 .detail_header label
 {
  	display: block;
-    font-size: 22px;
+    font-size: 18px;
     padding: 10px 0 0;
-    text-align: center;
+    text-align: left;
     width: 100%;
+    padding-left: 10px;
+    color: #FF4E45;
+    font-weight: 700;
 }
 
 .articleAction
@@ -20,7 +23,7 @@
 }
 .articleNo
 {
-    font-size:25px;
+    font-size:20px;
     font-weight:bold;
     color:#ff6633;
 }
@@ -55,6 +58,7 @@
     padding: 5px;
     width: 100%;
     font-weight:bold;
+    text-align:left;
 }
 .col-postDate
 {
@@ -64,24 +68,20 @@
     width: 100%;
     }
 
-.col-publisher
+.col.publisher
 {
-   -moz-box-flex: 1;
-    display: block;
-    flex: 1 1 0;
-    width: 100%;
+   font-size: 14px;
+    text-align: left;
+    color: #11C1F3;
+    font-weight: 700;
+    text-align : left;
   }
 
   .postDate{
-
+  text-align: left;
   font-size:12px;
   }
 
-  .publisher{
-
-  font-size:12px;
-
-  }
   .learningShare{
 
   text-decoration: none;
@@ -96,4 +96,51 @@
   .tickIcon{
 	vertical-align:middle;
   }
-
+h5.icon-left {
+    font-size: 14px;
+    color: #03A9F4;
+    text-align: left;
+    margin-top: 0px;
+}
+.button-bargroup{
+  border-color: transparent;
+    background-color: #FF9800;
+    color: #FFF4F4;
+    position: relative;
+    display: inline-block;
+    margin: 0;
+    padding: 0 12px;
+    min-width: 30px;
+    min-height: 10px;
+    border-width: 1px;
+    border-style: solid;
+    border-radius: 4px;
+    vertical-align: top;
+    text-align: center;
+    text-overflow: ellipsis;
+    font-size: 14px;
+    line-height: 25px;
+    cursor: pointer;
+    align-items: center;
+    font-weight: 700;
+  }
+  .col-50-style {
+    -webkit-box-flex: 0;
+    -webkit-flex: 0 0 50%;
+    -moz-box-flex: 0;
+    -moz-flex: 0 0 50%;
+    -ms-flex: 0 0 50%;
+    flex: 0 0 50%;
+    max-width: 50%;
+    height: 20px;
+}
+.learningDescription{
+  font-size: 14px;
+}
+.mainCard{
+  margin-top : 0px;
+}
+.item.row.boardDetail{
+  padding-top: 0px;
+  padding-bottom: 0px;
+}

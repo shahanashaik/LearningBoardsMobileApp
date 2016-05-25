@@ -97,7 +97,7 @@ $scope.goToSearch = function () {
 
 .controller('xmlController', function($scope, $http) 
 { 
-    $http.get("//lbdemo.accenture.com/boards.xml", 
+    $http.get("//lbdemo.accenture.com/boards.php", 
     { 
         transformResponse: function(cnv) 
         { 
