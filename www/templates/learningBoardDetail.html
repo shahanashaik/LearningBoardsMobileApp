@@ -38,7 +38,7 @@
     <!-- <div>
     <progress class="progress" max="100" value="80"></progress>
   </div> -->
-  <div class="list card mainCard">
+  <div class="list card mainCard" ng-click="openInExternalBrowser()">
     <div class="item row boardDetail">
       <div class="col col-10 articleNo">01</div>
       <div class="col learningTitle">What is A3?</div>
@@ -66,7 +66,8 @@
   </div> 
 </div>
 </div>
-<div class="list card mainCard">
+<div class="list card mainCard" ng-click="openInAppBrowser()">
+
     <div class="item row boardDetail">
       <div class="col col-10 articleNo">02</div>
       <div class="col learningTitle">Cloud 101 – Public vs. Private vs. Hybrid</div>
@@ -94,7 +95,7 @@
   </div> 
 </div>
 </div>
-  <div class="list card mainCard">
+  <div class="list card mainCard" ng-click="openCordovaWebView()">
     <div class="item row boardDetail">
       <div class="col col-10 articleNo">03</div>
       <div class="col learningTitle">What is Cloud Computing?</div>
