@@ -24,22 +24,24 @@
         <h3 class="">Popular Boards</h3>
     </div>
 --> 
- <div class="popularBoard card" ng-click = "goToBoardDetail('app.learningBoardDetail')">
+ <div ng-controller="xmlController">
+ <div class="popularBoard card" ng-click = "goToBoardDetail('app.learningBoardDetail')" ng-repeat="items in itemsArray">
     <div class="board_Title">
-        <h2>Learning Boards and A3</h2>
-        
+        <h2>{{items.title}}</h2>
       </div>
     <div class="imageDiv">
-        <img src="img/popular1.png"></img>
+        <img src={{items.board_img.__text}}></img>
     </div>
     <div class="buttonDiv">
       <p><strong>Level :</strong> Intermediate</p>
-      <p><img src="img/icon_recommend.gif"><span>1,989</span></p>
-      <p><img src="img/icon_completed.png"><span>31,474</span></p>
-      <p><img src="img/icon_follow.png"><span>3,755</span></p>
+      <p><img src="img/icon_recommend.gif"><span>{{items.endorece}}</span></p>
+      <p><img src="img/icon_completed.png"><span>{{items.completed}}</span></p>
+      <p><img src="img/icon_follow.png"><span>{{items.follow}}</span></p>
     
     </div>
  </div>
+</div>
+<!--
   <div class="popularBoard card" ng-click = "goToBoardDetail('app.learningBoardDetail')">
     <div class="board_Title">
         <h2>Meaningful Connections</h2>
@@ -129,6 +131,7 @@
       <p><img src="img/icon_follow.png"><span>3,755</span></p> 
     </div>
  </div>
+-->
    
   </ion-content>
 </ion-view>

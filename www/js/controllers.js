@@ -61,20 +61,20 @@ $scope.goToSearch = function () {
   $scope.goToBoardDetail =  function(stateName) {
     $state.go(stateName);
   };
-   $ionicModal.fromTemplateUrl('modal-template.html', {
-      scope: $scope,
-      animation: 'slide-in-up'
-   }).then(function(modal) {
-     $scope.modal = modal;
-   });
-   $scope.openModal = function() {
-      $scope.modal.show();
-   };
+   // $ionicModal.fromTemplateUrl('modal-template.html', {
+   //    scope: $scope,
+   //    animation: 'slide-in-up'
+   // }).then(function(modal) {
+   //   $scope.modal = modal;
+   // });
+   // $scope.openModal = function() {
+   //    $scope.modal.show();
+   // };
  
-   $scope.closeModal = function() {
-      $scope.modal.hide();
-   };
-   $timeout($scope.openModal, 0);
+   // $scope.closeModal = function() {
+   //    $scope.modal.hide();
+   // };
+   // $timeout($scope.openModal, 0);
 })
 
 .controller('BrowseCtrl', function($scope, $state) {
@@ -115,8 +115,19 @@ $scope.goToSearch = function () {
   
 })
 
-.controller('xmlController', function($scope, $http) 
+.controller('xmlController', function($scope, $http, $ionicLoading) 
 { 
+  $scope.show = function() {
+    $ionicLoading.show({
+      template: '<p>Loading...</p><ion-spinner icon = "bubbles"></ion-spinner>'
+    });
+  };
+
+  $scope.hide = function(){
+        $ionicLoading.hide();
+  };
+
+    $scope.show($ionicLoading);  
     $http.get("//lbdemo.accenture.com/boards.php", 
     { 
         transformResponse: function(cnv) 
@@ -130,6 +141,7 @@ $scope.goToSearch = function () {
       $scope.XMLData = response;
       $scope.itemsArray = $scope.XMLData.rss.channel.item;
         console.log(response);
+         $scope.hide($ionicLoading); 
         //console.log($scope.itemsArray);
     }); 
 })
