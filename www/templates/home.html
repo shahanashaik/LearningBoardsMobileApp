@@ -1,29 +1,6 @@
 <ion-view view-title="Learning Boards">
   <ion-content class = "padding has-header">
-    <!--<div id = "slidingBox">
-      <ion-slide-box auto-play='true' does-continue='true' slide-intervel='50000'>
-                                                <ion-slide class="item-thumbnail-left">
-                                                <img src="img/learn.png" alt="learn"></img>
-                                                <h4>Learn</h4>
- 
-                                                <p>Browse or search based on the topic area you want to learn more about. Access beautifully curated internal and external content from a learning board.</p>
-                                                </ion-slide>
-                                                <ion-slide class="item-thumbnail-left">
-                                                <img src="img/follow.png" alt="follow"></img>
-                                                <h4>Follow</h4>
-                                                <p>Ensure you are getting the latest updates by following learning boards that interest you. follow a curator to expand your library of learning boards.</p>
-                                                </ion-slide>
-                                                <ion-slide class="item-thumbnail-left">
-                                                <img src="img/collaborate.png" alt="collaborate"></img>
-                                                <h4>Collaborate</h4>
-                                                <p>Leave comment to provide feedback to the community. Endorese a learning board to improve its usefulness rating amongst the community.</p>
-                                                </ion-slide>
-      </ion-slide-box>
-    </div>
-    <div>
-        <h3 class="">Popular Boards</h3>
-    </div>
---> 
+    
  <div ng-controller="xmlController">
  <div class="popularBoard card" ng-click = "goToBoardDetail('app.learningBoardDetail')" ng-repeat="items in itemsArray">
     <div class="board_Title">
@@ -41,97 +18,6 @@
     </div>
  </div>
 </div>
-<!--
-  <div class="popularBoard card" ng-click = "goToBoardDetail('app.learningBoardDetail')">
-    <div class="board_Title">
-        <h2>Meaningful Connections</h2>
-        
-      </div>
-    <div class="imageDiv">
-        <img src="img/popular2.png"></img>
-    </div>
-    <div class="buttonDiv">
-      <p><strong>Level :</strong> Intermediate</p>
-      <p><img src="img/icon_recommend.gif"><span>1,989</span></p>
-      <p><img src="img/icon_completed.png"><span>31,474</span></p>
-      <p><img src="img/icon_follow.png"><span>3,755</span></p>
-    </div>
- </div>
-  <div class="popularBoard card" ng-click = "goToBoardDetail('app.learningBoardDetail')">
-    <div class="board_Title">
-        <h2>Performance Achievement: Know Yourself LearningBoard</h2>
-       
-      </div>
-    <div class="imageDiv">
-        <img src="img/popular3.png"></img>
-    </div>
-    <div class="buttonDiv">
-      <p><strong>Level :</strong> Intermediate</p>
-      <p><img src="img/icon_recommend.gif"><span>1,989</span></p>
-      <p><img src="img/icon_completed.png"><span>31,474</span></p>
-      <p><img src="img/icon_follow.png"><span>3,755</span></p>  
-    </div>
- </div>
- <div class="popularBoard card" ng-click = "goToBoardDetail('app.learningBoardDetail')">
-    <div class="board_Title">
-        <h2>Learning Boards and A3</h2>
-      </div>
-    <div class="imageDiv">
-        <img src="img/popular1.png"></img>
-    </div>
-    <div class="buttonDiv">
-      <p><strong>Level :</strong> Intermediate</p>
-      <p><img src="img/icon_recommend.gif"><span>1,989</span></p>
-      <p><img src="img/icon_completed.png"><span>31,474</span></p>
-      <p><img src="img/icon_follow.png"><span>3,755</span></p>
-    </div>
- </div>
- <div class="popularBoard card" ng-click = "goToBoardDetail('app.learningBoardDetail')">
-    <div class="board_Title">
-        <h2>Meaningful Connections</h2>
-        
-      </div>
-    <div class="imageDiv">
-        <img src="img/popular2.png"></img>
-    </div>
-    <div class="buttonDiv">
-      <p><strong>Level :</strong> Intermediate</p>
-      <p><img src="img/icon_recommend.gif"><span>1,989</span></p>
-      <p><img src="img/icon_completed.png"><span>31,474</span></p>
-      <p><img src="img/icon_follow.png"><span>3,755</span></p>
-    </div>
- </div>
-  <div class="popularBoard card" ng-click = "goToBoardDetail('app.learningBoardDetail')">
-    <div class="board_Title">
-        <h2>Performance Achievement: Know Yourself LearningBoard</h2>
-        
-      </div>
-    <div class="imageDiv">
-        <img src="img/popular3.png"></img>
-    </div>
-    <div class="buttonDiv">
-      <p><strong>Level :</strong> Intermediate</p>
-      <p><img src="img/icon_recommend.gif"><span>1,989</span></p>
-      <p><img src="img/icon_completed.png"><span>31,474</span></p>
-      <p><img src="img/icon_follow.png"><span>3,755</span></p>
-    </div>
- </div>
-  <div class="popularBoard card" ng-click = "goToBoardDetail('app.learningBoardDetail')">
-    <div class="board_Title">
-        <h2>Learning Boards and A3</h2>
-       
-      </div>
-    <div class="imageDiv">
-        <img src="img/popular1.png"></img>
-    </div>
-    <div class="buttonDiv">
-      <p><strong>Level :</strong> Intermediate</p>
-      <p><img src="img/icon_recommend.gif"><span>1,989</span></p>
-      <p><img src="img/icon_completed.png"><span>31,474</span></p>
-      <p><img src="img/icon_follow.png"><span>3,755</span></p> 
-    </div>
- </div>
--->
    
   </ion-content>
 </ion-view>
