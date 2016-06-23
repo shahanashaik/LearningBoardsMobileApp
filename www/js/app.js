@@ -29,7 +29,7 @@ mainModule.run(function($ionicPlatform) {
     url: '/app',
     abstract: true,
     templateUrl: 'templates/menu.html',
-    controller: 'AppCtrl'
+    controller: 'AppController'
   })
 
   .state('app.search', {
@@ -37,7 +37,7 @@ mainModule.run(function($ionicPlatform) {
     views: {
       'menuContent': {
         templateUrl: 'templates/search.html',
-        controller: 'SearchCtrl'
+        controller: 'SearchController'
       }
     }
   })
@@ -48,7 +48,7 @@ mainModule.run(function($ionicPlatform) {
         'menuContent': {
           templateUrl: 'templates/browse.html',
           //controller: 'BrowseCtrl'
-          controller: 'BrowseDetailCtrl'
+          controller: 'BrowseDetailController'
         }
       }
     })
@@ -57,7 +57,7 @@ mainModule.run(function($ionicPlatform) {
       views: {
         'menuContent': {
           templateUrl: 'templates/home.html',
-          controller: 'HomeCtrl'
+          controller: 'HomeController'
         }
       }
     })
@@ -67,7 +67,7 @@ mainModule.run(function($ionicPlatform) {
       views: {
         'menuContent': {
           templateUrl: 'templates/learningBoardDetail.html',
-          controller: 'BoardDetailCtrl'
+          controller: 'BoardDetailController'
         }
       }
     })
@@ -77,7 +77,7 @@ mainModule.run(function($ionicPlatform) {
       views: {
         'menuContent': {
           templateUrl: 'templates/browseDetail.html',
-          controller: 'BrowseDetailCtrl'
+          controller: 'BrowseDetailController'
         }
       }
     });
