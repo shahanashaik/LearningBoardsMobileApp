@@ -13,7 +13,7 @@ angular.module('starter.controllers')
   };
 
     $scope.show($ionicLoading);  
-    $http.get("//lbdemo.accenture.com/boards.php", 
+    $http.get('http://lbdemo.accenture.com/boards.php', 
     { 
         transformResponse: function(cnv) 
         { 
@@ -27,6 +27,7 @@ angular.module('starter.controllers')
       $scope.itemsArray = $scope.XMLData.rss.channel.item;
         console.log(response);
          $scope.hide($ionicLoading); 
-        //console.log($scope.itemsArray);
-    }); 
+    });
+
 });
+

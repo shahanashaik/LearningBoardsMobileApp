@@ -1,6 +1,9 @@
 angular.module('starter.controllers')
 
-.controller('BoardDetailController', function($scope, $state) {
+.controller('BoardDetailController',['$scope','$state','HomeService', function($scope, $state, HomeService) {
+
+  $scope.boardTitle = HomeService.getSelectedBoard();
+  console.log($scope.boardTitle);
   $scope.goBack =  function() {
     $state.go('app.home');
   };
@@ -24,4 +27,4 @@ angular.module('starter.controllers')
     window.open('http://google.com','_self'); 
   };
   
-});
+}]);

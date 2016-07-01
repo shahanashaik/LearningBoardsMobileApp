@@ -2,7 +2,7 @@
   <ion-content class = "padding has-header">
     
  <div ng-controller="xmlController">
- <div class="popularBoard card" ng-click = "goToBoardDetail('app.learningBoardDetail')" ng-repeat="items in itemsArray">
+ <div class="popularBoard card" ng-click = "goToBoardDetail(items.title)" ng-repeat="items in itemsArray">
     <div class="board_Title">
         <h2>{{items.title}}</h2>
       </div>

@@ -1,8 +1,11 @@
 angular.module('starter.controllers')
 
-.controller('HomeController', function($scope, $state) {
-  $scope.goToBoardDetail =  function(stateName) {
-    $state.go(stateName);
+.controller('HomeController', ['$scope','$state','HomeService', function($scope, $state, HomeService) {
+  $scope.goToBoardDetail =  function(selectedBoard) {
+  	console.log(selectedBoard);
+  	HomeService.setSelectedBoard(selectedBoard);
+    $state.go('app.learningBoardDetail');
   };
    
-});
+}]);
+
