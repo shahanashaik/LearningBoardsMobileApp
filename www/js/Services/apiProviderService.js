@@ -1,20 +1,24 @@
 angular.module('starter.services',[])
 
-.service('ApiProviderService', function($http) {
+.factory('ApiProviderService', function($http) {
 
-    this.invokeApi = function(options)
+    var obj = {};
+    var baseUrl = "http://lbdemo.accenture.com/boards.php/";
+    var APITimeout = 200000;
+    obj.getServerResponse = function(options)
     {
         return $http({
-                        method: 'GET',
-                        url: 'http://lbdemo.accenture.com/boards.php',
-                        transformResponse: function(cnv)
-                        {
+                        method: options.method,
+                        url: baseUrl+options.url,
+                        transformResponse: function(cnv) 
+                        { 
                             var x2js = new X2JS(); 
                             var aftCnv = x2js.xml_str2json(cnv); 
-                            return aftCnv;
-                        }
-                    });
+                            console.log(aftCnv);
+                            return aftCnv; 
+                        } 
+                    });             
     }
-
-    console.log('executed');
+    return obj;
 });
+

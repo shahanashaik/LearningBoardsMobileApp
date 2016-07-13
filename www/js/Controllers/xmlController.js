@@ -1,6 +1,6 @@
 angular.module('starter.controllers')
 
-.controller('xmlController', function($scope, $http, $ionicLoading) 
+.controller('xmlController',['$scope','$ionicLoading','ApiProviderService','ConversionService', function($scope, $ionicLoading, ApiProviderService, ConversionService) 
 { 
   $scope.show = function() {
     $ionicLoading.show({
@@ -12,22 +12,15 @@ angular.module('starter.controllers')
         $ionicLoading.hide();
   };
 
-    $scope.show($ionicLoading);  
-    $http.get('http://lbdemo.accenture.com/boards.php', 
-    { 
-        transformResponse: function(cnv) 
-        { 
-            var x2js = new X2JS(); 
-            var aftCnv = x2js.xml_str2json(cnv); 
-            return aftCnv; 
-        } 
-    }).success(function(response) 
-    { 
-      $scope.XMLData = response;
-      $scope.itemsArray = $scope.XMLData.rss.channel.item;
-        console.log(response);
-         $scope.hide($ionicLoading); 
-    });
-
-});
+  $scope.show();
+  ApiProviderService.getServerResponse({method: 'GET', url: ''}).
+          success(function(response)
+          {
+            $scope.itemsArray = ConversionService.convertResponse(response);
+            $scope.hide();
+          },function(response)
+          {
+              return response;
+          });
+}]);
 
