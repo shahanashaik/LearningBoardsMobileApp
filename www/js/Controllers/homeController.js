@@ -7,7 +7,7 @@ angular.module('starter.controllers')
 	$scope.$on('$ionicView.enter', function()
 	{
         $scope.loadBoards();   
-    });
+  });
 
 	$scope.show = function() 
 	{
@@ -34,12 +34,12 @@ angular.module('starter.controllers')
   	  $scope.show();
   	  HomeService.getBoardsDetails().success(function(response)
   	  {
-	  	 $scope.itemsArray = ConversionService.convertResponse(response);
-  		 $scope.hide();
-	  },function(errCode)
-  		{
-  			$scope.showErrorMessage = true;
-  		});
+	  	    $scope.itemsArray = ConversionService.convertResponse(response);
+  		    $scope.hide();
+	     },function(errCode)
+  		  {
+  			   $scope.showErrorMessage = true;
+  		  });
   }
 
 }]);
